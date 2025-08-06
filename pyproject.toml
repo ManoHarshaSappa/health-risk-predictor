@@ -1,7 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "heart-disease-risk-predictor"
+name = "health-risk-predictor"
 version = "0.1.0"
-description = "ML-based heart disease risk prediction with ChatGPT explanations via Flask interface"
+description = "Heart disease risk prediction with ML and ChatGPT explanations via Flask"
 readme = "README.md"
 requires-python = ">=3.12"
 
@@ -17,3 +21,6 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "jupyterlab>=4.0.0"
 ]
+
+[tool.setuptools]
+packages = ["model"]
